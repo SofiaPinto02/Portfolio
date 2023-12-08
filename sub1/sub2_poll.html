@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <title> NIJI EN Livers Survey </title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+       
+       fieldset{
+            width: 600px;
+            margin: auto;
+            border: 1px solid #8d4f71;
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px 50px;
+        }
+        
+        input, textarea{
+            padding: 5px;
+            margin: 5px;
+            border: 0.5px solid hotpink;
+            border-radius: 10px;
+        }
+        select{ width: 150px;}
+
+        label{
+            font-weight: 800;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h2>Survey</h2>
+        </header>
+
+        <main>
+            <form name="Survey" action="">
+                <fieldset>
+                    <label for="">Name : </label>
+                    <input type=“text” size=20>
+
+                    &nbsp;&nbsp; <label for="">Gender : </label>
+                    <input type=radio name=Gender value=male> M&nbsp;&nbsp; <input type=radio name=Gender value=female> F<br>
+
+                    <label for="">Birthday : </label>
+                    <input type=“text” size=18><br>
+
+                    <label for="">E-mail : </label>
+                    <input type=email placeholder=conninit@outlook.com required><br>
+
+                    <label for="">Direction : </label>
+                    <input type=“text” size=72> <br><br>
+
+                    <label for="">1. What type of streamer do you like?</label><br>
+                    <input type=checkbox name=hobby1 value=v1> Comfy <br>
+                    <input type=checkbox name=hobby2 value=v2> Unseiso <br>
+                    <input type=checkbox name=hobby3 value=v3> Gamer <br>
+                    <input type=checkbox name=hobby4 value=v4> Other <br><br>
+
+                    <label for="">2. When did you get to know NIJISANJI EN?</label><br>
+                    <input type=radio name=alcohol value=v1> 2021 <br>
+                    <input type=radio name=alcohol value=v2> 2022 <br>
+                    <input type=radio name=alcohol value=v3> 2023 <br><br>
+
+                    <label for="">3. What's your favorite Wave?</label>
+                    <select name="hobby" size=1>
+                        <option>LAZULIGHT</option>
+                        <option>OBSYDIA</option>
+                        <option selected>ETHYRIA</option>
+                        <option>LUXIEM</option>
+                        <option>NOCTYX</option>
+                        <option>ILUNA</option>
+                        <option>XSOLEIL</option>
+                    </select><br><br>
+
+                    <label for="">4. What type of content do you enjoy the most?</label><br>
+                    <select name="interest" size=6 multiple>
+                        <option value="1" selected>Gameplay</option>
+                        <option value="2">Handcam</option>
+                        <option value="3">IRL Collab</option>
+                        <option value="4">Karaoke</option>
+                        <option value="5">Reaction Videos</option>
+                        <option value="6">Other</option>
+                    </select><br><br>
+
+                    <label for="">5. Will you watch KRISIS debut?</label>
+                    <input type="date"><br><br>
+
+                    <label for="">6. Why do you like the NIJISANJI EN livers?</label><br>
+                    <textarea name="introduction" cols=90 rows=8></textarea><br>
+
+                    <input type=submit value="Complete" class="btn" > 
+                    <input type=reset value="Try Again" class="btn" > 
+                </fieldset>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

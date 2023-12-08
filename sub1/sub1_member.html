@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container{
+            width: 600px;
+            height: auto;
+            margin: 20px auto;
+            background-color: rgba(255, 192, 203, 0.393);
+            margin-bottom: 100px;    
+        }
+
+        .item{
+            margin: 20px 0 20px 30px;
+        }
+
+        label{
+            font-weight: bold;
+            display: block;
+        }
+        input{
+            width: 90%;
+            font-size: 1.2em;
+            padding: 10px;
+            border: 0.5px solid hotpink;
+            border-radius: 10px;
+        }
+
+        .b{
+            width: 28%;
+        }
+        #bday{
+            height: 44px;
+            border-radius: 10px;
+            border: 0.5px solid hotpink;
+        }
+        #gender{
+            width: 93%;
+            height: 44px;
+            font-size: 1.2em;
+            border: 0.5px solid hotpink;
+            border-radius: 10px;
+        }
+    </style>
+    <title>Membership</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h2>Membership</h2>
+        </header>
+        
+        <main>
+            <div class="container">
+                <form action="">
+                    <div class="item">
+                        <label for="userid">ID*</label>                        
+                        <input type="text" id="userid" placeholder="userid@outlook.com"  name="" required autofocus>
+                    </div>
+
+                    <div class="item">
+                        <label for="userpw1">Password*</label>
+                        <input type="password" id="userpw1" name="" required>
+                        <label for="userpw2">Confirm Password*</label>
+                        <input type="password" id="userpw2" name="" required>
+                    </div>
+
+                    <div class="item">
+                        <label for="username">Name</label>
+                        <input type="text" id="username" placeholder="Luca Kaneshiro"  name=""  >
+                    </div>
+
+                    <div class="item">
+                        <label for="birthday">Birthday</label>
+                        <input type="number" class="b" name="" id="birthday" minlength="4" maxlength="4" placeholder="Year(4 Digits)">
+                        <select class="b" id="bday">
+                            <option value="월">Month</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <input type="number" class="b" name="" min="1" max="31" placeholder="Day">
+                    </div>
+
+                    <div class="item">
+                        <label>Gender</label>
+                        <select id="gender">
+                            <option value="Gender">Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="item">
+                        <label for="useremail">E-mail</label>
+                        <input type="email" name="" id="useremail" placeholder="user@example.com">
+                    </div>
+
+                    <div class="item">
+                        <label for="usertel">Phone Number</label>
+                        <input type="text" name="" value="010" style="width:10%;">
+                        <input type="tel" name="" id="usertel" placeholder="xxxx-xxxx" style="width:75%;">
+                    </div>
+
+                    <div class="item">
+                        <input type="submit" class="btn" value="Join">
+                        <input type="reset" class="btn" value="Cancel">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
